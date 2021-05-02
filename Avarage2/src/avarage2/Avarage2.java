@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package avarage2;
 
-/**
- *
- * @author Arif
- */
+import java.util.Scanner;
+
 public class Avarage2 {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner x = new Scanner(System.in);
+        
+        float a, b, c, r;
+        a = x.nextFloat();
+        b = x.nextFloat();
+        c = x.nextFloat();
+        
+        r = (float) ((a*2+b*3+c*5)/(2+3+5));
+        
+        System.out.printf("%.1f\n", r);
+       
+        
     }
     
 }
